@@ -73,3 +73,51 @@ Install the following libraries through:
 BleMouse
 Adafruit MPU6050
 Adafruit Unified Sensor
+```
+**🛠️ Calibration & Tuning**
+
+### Keep the ESP32 completely still during startup so that the gyroscope can calibrate correctly.
+
+For better cursor control, adjust:
+```
+sensitivity
+thresholdX
+thresholdY
+```
+These parameters can be tuned according to your preferred cursor movement and responsiveness.
+
+A USB connection is recommended during development and testing for stable power.
+
+**🚀 Getting Started**
+1. Install Arduino IDE
+
+Install Arduino IDE and add ESP32 board support.
+
+2. Install Required Libraries
+
+Install:
+```
+BleMouse
+Adafruit MPU6050
+Adafruit Unified Sensor
+```
+3. Connect the Hardware
+
+Connect the ESP32, MPU6050 and four push buttons according to the wiring diagram.
+
+4. Upload the Code
+
+Open the Air Mouse firmware in Arduino IDE and upload it to the ESP32.
+
+5. Pair with Your Computer
+
+After uploading:
+```
+Power on the ESP32.
+Open Bluetooth settings on your PC/laptop.
+Search for the ESP32 Air Mouse.
+Pair it as a Bluetooth mouse.
+```
+6. Control the Cursor
+
+Move the ESP32 through the air to control the mouse cursor.
